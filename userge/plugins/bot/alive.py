@@ -42,7 +42,7 @@ async def _init() -> None:
                 LOGGER.debug(b_rr)
 
 
-@userge.on_cmd("alive", about={"header": "Just For Fun"}, allow_channels=False)
+@userge.on_cmd("Alive", trigger="", about={"header": "Just For Fun"}, allow_channels=False)
 async def alive_inline(message: Message):
     try:
         if message.client.is_bot:
@@ -55,7 +55,7 @@ async def alive_inline(message: Message):
         else:
             await send_alive_message(message)
     except Exception as e_all:
-        await message.err(str(e_all), del_in=10, log=__name__)
+        await message.err(str(e_all), log=__name__)
 
 
 async def send_inline_alive(message: Message) -> None:
