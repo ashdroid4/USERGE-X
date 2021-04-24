@@ -180,10 +180,8 @@ if userge.has_bot:
             start_msg, btns = default_owner_start(from_user)
         else:
             start_msg = f"""
-Hello 👋 {from_user.fname},
-Nice To Meet You !, I'm <b>{bot_.fname}</b> A Bot.
-
-        <b><i>Powered by</i> [USERGE-X](https://t.me/x_xtests)
+Hello 👋 {from_user.fname}.
+Nice To Meet You! I'm <b>{bot_.fname}</b>, A Bot.
 
 My Master is : {owner_.flname}</b>
 """
@@ -196,8 +194,7 @@ My Master is : {owner_.flname}</b>
             )
             btns = [
                 [
-                    InlineKeyboardButton("👤  CONTACT", url=contact_url),
-                    InlineKeyboardButton("⭐️  REPO", url=Config.UPSTREAM_REPO),
+                    InlineKeyboardButton("👤  CONTACT", url=contact_url)
                 ]
             ]
         try:
