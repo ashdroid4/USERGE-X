@@ -13,7 +13,7 @@ from userge import Message, userge
 
 
 @userge.on_cmd(
-    "Ping",
+    "Ping$",
     trigger="",
     about={
         "header": "check how long it takes to ping your userbot",
