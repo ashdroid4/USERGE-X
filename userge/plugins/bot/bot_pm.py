@@ -147,9 +147,9 @@ if userge.has_bot:
                 start_date = str(date.today().strftime("%B %d, %Y")).replace(",", "")
                 bot_start_msg = (
                     f"A <b>[New User](tg://openmessage?user_id={user_.id})</b> Started your Bot.\n"
-                    f"  ID: <code>{user_.id}</code>\n"
-                    f"  Name: {user_.flname}\n"
-                    f"  👤: {user_.mention}\n"
+                    f"ID: <code>{user_.id}</code>\n"
+                    f"Name: {user_.flname}\n"
+                    f"👤: {user_.mention}\n"
                 )
                 await asyncio.gather(
                     BOT_START.insert_one(
@@ -196,7 +196,7 @@ Nice To Meet You! I'm <b>{bot_.fname}</b>😊
             )
             btns = [
                 [
-                    InlineKeyboardButton("👤  CONTACT", url=contact_url)
+                    InlineKeyboardButton("👤  URGENT", url=contact_url)
                 ]
             ]
         try:
