@@ -183,7 +183,7 @@ if userge.has_bot:
 Hello 👋 {from_user.fname}
 Nice To Meet You! I'm <b>{bot_.fname}</b>😊
 
-__My Master is : {owner_.flname}</b>__
+<i>My Master is: {owner_.flname}</i>
 """
             if Config.BOT_FORWARDS:
                 start_msg += "<b>\n📌 NOTE:</b>\nYou can 📨 <b>Send Message</b> here to contact my <b>Master.</b>"
